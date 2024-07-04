@@ -14,7 +14,7 @@ This project ensures consistent formatting and linting for Python and JavaScript
     npm install
     ```
 
-2. **Create a virtual environment and install Python dependencies**
+2. **Create a virtual environment and install Python dependencies**  
    For Windows:
     ```bash
     virtualenv myenv
