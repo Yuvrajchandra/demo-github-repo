@@ -1,15 +1,55 @@
+# This configuration would be enforced later
+
+# EditorConfig helps maintain consistent coding styles for multiple developers working on the same project across various editors and IDEs.
+# For more details, see https://editorconfig.org/
+# For VS Code, you need to install the plugin: https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
+
+# Top-most EditorConfig file
 root = true
 
+# General settings for all files
 [*]
-indent_style = space
-indent_size = 4
-end_of_line = lf
 charset = utf-8
-trim_trailing_whitespace = true
+end_of_line = lf
 insert_final_newline = true
+trim_trailing_whitespace = true
 
+# Python-specific settings
 [*.py]
 indent_size = 4
 
-[*.js]
+# JavaScript and TypeScript-specific settings
+[*.{js,ts}]
 indent_size = 2
+
+# Java-specific settings
+[*.java]
+indent_size = 4
+
+# Ruby-specific settings
+[*.rb]
+indent_size = 2
+
+# Go-specific settings
+[*.go]
+tab_width = 4
+
+# PHP-specific settings
+[*.php]
+indent_size = 4
+
+# Rust-specific settings
+[*.rs]
+indent_size = 4
+
+# R-specific settings
+[*.r]
+indent_size = 2
+
+# C#-specific settings
+[*.{cs,csproj,sln}]
+indent_size = 4
+
+# C++-specific settings
+[*.{cpp,h,hpp}]
+indent_size = 4
