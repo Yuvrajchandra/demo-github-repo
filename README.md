@@ -15,12 +15,18 @@ This project ensures consistent formatting and linting for Python and JavaScript
     ```
 
 2. **Create a virtual environment and install Python dependencies**
+   For Windows:
     ```bash
     virtualenv myenv
     myenv\Scripts\activate
     pip install -r requirements.txt
     ```
-
+    For Mac and Linux:
+    ```bash
+    virtualenv myenv
+    source myenv/bin/activate
+    pip install -r requirements.txt
+    ```
 3. **Install the git hook scripts**
     ```bash
     pre-commit install
