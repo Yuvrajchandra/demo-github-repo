@@ -1,6 +1,6 @@
 def test_function():
     x = 1
-    # y = 5
+    y = 5
     if x == 1:
         print("This is a test")
 
