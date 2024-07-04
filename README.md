@@ -1,6 +1,6 @@
 ## Demo GitHub Repo
 
-This project ensures consistent formatting and linting for Python and JavaScript code using pre-commit hooks.
+This project ensures consistent formatting and linting for Python and JavaScript code using pre-commit hooks. Configuring the formatters and linters for all the languages created many dependency issues, so lastly, I decided to start with Python and JS and then proceed to add the rest of them one by one.
 
 ## Prerequisites
 
