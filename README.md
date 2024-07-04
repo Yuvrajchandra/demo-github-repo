@@ -1,4 +1,4 @@
-## Project Name
+## Demo GitHub Repo
 
 This project ensures consistent formatting and linting for Python and JavaScript code using pre-commit hooks.
 
