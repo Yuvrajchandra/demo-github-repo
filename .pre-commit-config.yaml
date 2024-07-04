@@ -1,0 +1,44 @@
+# This configuration works perfectly for Python
+exclude: ^node_modules/
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-json
+
+  - repo: https://github.com/psf/black-pre-commit-mirror
+    rev: 24.4.2
+    hooks:
+      - id: black
+        # language_version: python3.11
+
+  - repo: https://github.com/PyCQA/flake8
+    rev: 7.1.0
+    hooks:
+      - id: flake8
+        additional_dependencies: [flake8-docstrings, flake8-import-order]
+        args: ['--max-line-length=88']
+        # language_version: python3.11
+
+  # JavaScript
+  - repo: https://github.com/pre-commit/mirrors-eslint
+    # rev: v8.38.0
+    rev: v9.6.0
+    hooks:
+      - id: eslint
+        files: \.[jt]sx?$ # *.js, *.jsx, *.ts and *.tsx
+        types: [file]
+        additional_dependencies:
+          - eslint
+          - prettier
+          - eslint-plugin-prettier
+          - eslint-config-prettier
+          - eslint-plugin-node
+          - eslint-config-node
+          - eslint-config-airbnb-base
+          - eslint-plugin-import # This is a peer dependency of eslint-config-airbnb-base
+        #   - @eslint/js
