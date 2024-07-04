@@ -27,7 +27,7 @@ This project ensures consistent formatting and linting for Python and JavaScript
     source myenv/bin/activate
     pip install -r requirements.txt
     ```
-3. **Install the git hook scripts**
+4. **Install the git hook scripts**
     ```bash
     pre-commit install
     ```
